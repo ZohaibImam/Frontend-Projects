@@ -4,7 +4,7 @@ let btns    = ["yellow","red","purple","green"];
 
 let started = false;
 let level   = 0;
-let highestScore = 0; // Variable to track the highest score achieved
+let highestScore = 0;                                         // Variable to track the highest score achieved
 
 //Step1:- Key Press --> Game Start
 document.addEventListener('keypress',function(){
@@ -50,7 +50,7 @@ function checkAns(idx){                                       //Matching Sequenc
     // let idx = level-1;                                     //level - 1 = if level is one the value must be saved at index 0 which is always static
     if(userSeq[idx] === gameSeq[idx]){                        //Checking game flashed button and user clicked button are same or not
         if(userSeq.length == gameSeq.length){
-            setTimeout(levelUp,800);                         //setTimeout is set because if level goes up without any delay and if the same color is flashed again it will not be visible                                            //If the user entered the all the same sequence of button flashed by the game the we level up the game for user
+            setTimeout(levelUp,800);                          //setTimeout is set because if level goes up without any delay and if the same color is flashed again it will not be visible                                            //If the user entered the all the same sequence of button flashed by the game the we level up the game for user
         }
     }else{
         highestScore = Math.max(highestScore, level);         // Updated highest score if current level is higher
@@ -86,7 +86,7 @@ function reset(){                                              //function to res
     level   = 0;
 };
 
-//HW:- To track the highest score and prints it on the screen comparing the current score 
+
 
 
 
