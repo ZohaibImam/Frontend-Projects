@@ -4,6 +4,7 @@ let btns    = ["yellow","red","purple","green"];
 
 let started = false;
 let level   = 0;
+let highestScore = 0; // Variable to track the highest score achieved
 
 //Step1:- Key Press --> Game Start
 document.addEventListener('keypress',function(){
@@ -52,7 +53,8 @@ function checkAns(idx){                                       //Matching Sequenc
             setTimeout(levelUp,800);                         //setTimeout is set because if level goes up without any delay and if the same color is flashed again it will not be visible                                            //If the user entered the all the same sequence of button flashed by the game the we level up the game for user
         }
     }else{
-        h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Press any key to start.`;
+        highestScore = Math.max(highestScore, level);         // Updated highest score if current level is higher
+        h2.innerHTML = `Game Over! Your score was <b>${level}</b> <br> Highest score: <b>${highestScore}</b> <br> Press any key to start.`;
         document.querySelector('body').style.backgroundColor = 'red';       //when game is over symboling by the background flash as red color effect  
         setTimeout(function(){
             document.querySelector('body').style.backgroundColor = 'white'; //after flashing to red color the background again set to white color
