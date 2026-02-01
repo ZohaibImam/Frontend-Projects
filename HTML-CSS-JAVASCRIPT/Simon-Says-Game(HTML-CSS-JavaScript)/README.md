@@ -24,3 +24,7 @@
 - **How to Run**: Open index.html in a web browser. Press any key to start, then click the buttons in sequence.
 
 - **Learning Outcomes**: Covers DOM manipulation, event handling, arrays, random generation, and basic game state management in JavaScript.
+
+![Simon Says Game Screenshot](Simon-1.png)
+
+![Simon Says Game Screenshot](Simon-2.png)

@@ -23,3 +23,7 @@
 - **How to Run**: Open index.html in a web browser. Click the hamburger icon to toggle the sidebar.
 
 - **Learning Outcomes**: Demonstrates HTML/CSS best practices, responsive design, and integration of external libraries.
+
+![Studio Bar Screenshot](Studio-Bar-1.png)
+
+![Studio Bar Screenshot](Studio-Bar-2.png)

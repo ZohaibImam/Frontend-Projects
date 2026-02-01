@@ -26,3 +26,5 @@
 - **How to Run**: Open index.html in a web browser. The interface is static, so no interactivity beyond scrolling/hovering.
 
 - **Learning Outcomes**: Focuses on replicating complex UI layouts with HTML/CSS, using external assets, and structuring a music app interface.
+
+![Spotify Clone Screenshot](Spotify.png)
